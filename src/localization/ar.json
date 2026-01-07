@@ -1,0 +1,49 @@
+{
+  "auth": {
+    "login": "تسجيل الدخول",
+    "register": "التسجيل",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "name": "الاسم",
+    "welcomeBack": "مرحباً بعودتك",
+    "signInToContinue": "قم بتسجيل الدخول للمتابعة",
+    "createAccount": "إنشاء حساب",
+    "signUpToGetStarted": "سجل للبدء",
+    "dontHaveAccount": "ليس لديك حساب؟",
+    "alreadyHaveAccount": "لديك حساب بالفعل؟",
+    "forgotPassword": "نسيت كلمة المرور؟"
+  },
+  "home": {
+    "shipments": "الشحنات",
+    "noShipments": "لا توجد شحنات",
+    "trackingNumber": "رقم التتبع",
+    "status": "الحالة",
+    "origin": "المنشأ",
+    "destination": "الوجهة",
+    "createdAt": "تاريخ الإنشاء",
+    "updatedAt": "آخر تحديث"
+  },
+  "common": {
+    "loading": "جاري التحميل...",
+    "error": "حدث خطأ",
+    "retry": "إعادة المحاولة",
+    "cancel": "إلغاء",
+    "save": "حفظ",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "back": "رجوع"
+  },
+  "shipment": {
+    "details": "تفاصيل الشحنة",
+    "routeInformation": "معلومات المسار",
+    "timeline": "الجدول الزمني",
+    "status": {
+      "pending": "قيد الانتظار",
+      "in_transit": "قيد النقل",
+      "delivered": "تم التسليم",
+      "cancelled": "ملغاة"
+    }
+  }
+}
+
