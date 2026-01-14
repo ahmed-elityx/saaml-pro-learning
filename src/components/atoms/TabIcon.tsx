@@ -126,7 +126,6 @@ const WalletIcon: React.FC<{ size: number; color: string }> = ({ size, color }) 
           styles.walletLine,
           {
             width: size * 0.5,
-            height: 1,
             backgroundColor: color,
           },
         ]}
@@ -222,6 +221,7 @@ const styles = StyleSheet.create({
   },
   walletLine: {
     marginTop: 2,
+    height: 1,
   },
   // Profile Icon Styles
   head: {

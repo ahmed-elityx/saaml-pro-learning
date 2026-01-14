@@ -15,13 +15,14 @@ export const StatusBadge: React.FC<StatusBadgeProps> = ({
   onPress,
 }) => {
   const displayLabel = label || status.charAt(0).toUpperCase() + status.slice(1);
+  const indicatorColor = status === 'online' ? '#4CAF50' : colors.textSecondary;
 
   const content = (
     <View style={styles.container}>
       <View
         style={[
           styles.indicator,
-          { backgroundColor: status === 'online' ? '#4CAF50' : colors.textSecondary },
+          { backgroundColor: indicatorColor },
         ]}
       />
       <Text style={styles.label}>{displayLabel}</Text>

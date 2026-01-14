@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, TouchableOpacity } from 'react-native';
+import { StyleSheet, TouchableOpacity } from 'react-native';
 import { TabIcon } from '../atoms/TabIcon';
 import { Text } from '../atoms/Text';
 import { colors } from '../../theme/colors';
@@ -25,7 +25,7 @@ export const TabBarItem: React.FC<TabBarItemProps> = ({
       <TabIcon name={iconName} focused={focused} size={24} />
       <Text
         variant="caption"
-        style={[styles.label, focused && styles.labelFocused]}>
+        style={[styles.label, focused ? styles.labelFocused : null]}>
         {label}
       </Text>
     </TouchableOpacity>

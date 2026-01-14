@@ -4,8 +4,6 @@ import { Input } from '../atoms/Input';
 import { Button } from '../atoms/Button';
 import { EyeIcon } from '../atoms/EyeIcon';
 import { spacing } from '../../theme/spacing';
-import { colors } from '../../theme/colors';
-import { validateEmail, validatePassword } from '../../utils/validators';
 
 interface LoginFormProps {
   onSubmit: (email: string, password: string) => void;

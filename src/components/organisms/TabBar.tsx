@@ -43,7 +43,6 @@ export const TabBar: React.FC<TabBarProps> = ({
         };
 
         // Handle nested navigators (Home is a stack)
-        const routeName = route.state?.routes[route.state.index]?.name || route.name;
         const iconName = iconMap[route.name] || 'home';
 
         return (

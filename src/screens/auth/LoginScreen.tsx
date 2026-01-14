@@ -5,7 +5,7 @@ import { useNavigation, CommonActions } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { LoginCard } from '../../components/organisms/LoginCard';
 import { colors } from '../../theme/colors';
-import { AuthStackParamList, RootStackParamList } from '../../types/navigation';
+import { AuthStackParamList } from '../../types/navigation';
 import { navigationRef } from '../../navigation/RootNavigator';
 
 type LoginScreenNavigationProp = StackNavigationProp<AuthStackParamList>;

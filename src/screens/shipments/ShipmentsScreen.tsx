@@ -14,11 +14,26 @@ export const ShipmentsScreen: React.FC = () => {
 
   useEffect(() => {
     fetchShipments();
-  }, []);
+  }, [fetchShipments]);
 
-  const renderShipment = ({ item }: { item: Shipment }) => (
-    <ShipmentCard shipment={item} />
-  );
+  const renderShipment = ({ item }: { item: Shipment }) => {
+    // Map Shipment API data to ShipmentCard props
+    const statusMap: Record<Shipment['status'], string> = {
+      pending: 'Pending',
+      in_transit: 'In Transit',
+      delivered: 'Delivered',
+      cancelled: 'Cancelled',
+    };
+    
+    return (
+      <ShipmentCard
+        name={item.trackingNumber}
+        status={statusMap[item.status] || item.status}
+        address={item.destination}
+        statusText={statusMap[item.status] || item.status}
+      />
+    );
+  };
 
   const renderEmpty = () => (
     <View style={styles.emptyContainer}>
