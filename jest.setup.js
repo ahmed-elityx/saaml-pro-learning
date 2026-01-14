@@ -52,6 +52,3 @@ jest.mock('react-redux', () => {
     useSelector: (selector) => selector({}),
   };
 });
-
-// Silence the warning: Animated: `useNativeDriver` is not supported
-jest.mock('react-native/Libraries/Animated/NativeAnimatedHelper');
