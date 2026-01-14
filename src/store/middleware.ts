@@ -1,6 +1,6 @@
 import { Middleware } from '@reduxjs/toolkit';
 
-export const loggerMiddleware: Middleware =
+export const loggerMiddleware: Middleware<any, any> =
   (store) => (next) => (action) => {
     if (__DEV__) {
       console.log('Dispatching:', action);
@@ -11,7 +11,7 @@ export const loggerMiddleware: Middleware =
     return next(action);
   };
 
-export const authMiddleware: Middleware =
+export const authMiddleware: Middleware<any, any> =
   (_store) => (next) => (action) => {
     // Handle token refresh, logout on 401, etc.
     return next(action);

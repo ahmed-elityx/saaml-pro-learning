@@ -7,7 +7,7 @@ interface TextProps {
   children: React.ReactNode;
   variant?: 'h1' | 'h2' | 'h3' | 'body' | 'bodySmall' | 'caption';
   color?: string;
-  style?: TextStyle;
+  style?: TextStyle | TextStyle[];
   numberOfLines?: number;
 }
 

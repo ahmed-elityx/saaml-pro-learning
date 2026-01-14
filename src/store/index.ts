@@ -15,7 +15,7 @@ export const store = configureStore({
         ignoredActions: [],
       },
     }).concat(loggerMiddleware, authMiddleware),
-});
+}) as ReturnType<typeof configureStore>;
 
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;

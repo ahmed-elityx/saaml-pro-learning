@@ -25,7 +25,7 @@ export const TabBarItem: React.FC<TabBarItemProps> = ({
       <TabIcon name={iconName} focused={focused} size={24} />
       <Text
         variant="caption"
-        style={[styles.label, focused ? styles.labelFocused : null]}>
+        style={focused ? [styles.label, styles.labelFocused] : styles.label}>
         {label}
       </Text>
     </TouchableOpacity>
